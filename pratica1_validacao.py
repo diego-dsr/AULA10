@@ -3,7 +3,7 @@
 class NumeroImparError(Exception):
     pass
 
-
+print("SOMATÓRIO SOMENTE DE NÚMEROS PARES")
 # Função para somar e imprimir
 def soma(a, b):
     print(f"Soma = {a + b}")

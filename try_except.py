@@ -1,16 +1,11 @@
 try:
     def soma(a,b):
         res = a + b
-        #print(f"o resultado do primeiro calculo é: {res}")
-        if i in soma % 2 ==0:
-             print("Número Impar")
-        else:
-            return "impar"
-    
+            
         return res
     
     
-    print(F"o resultado do primeiro calculo é {soma(a,b)}")
+    
     
 except ZeroDivisionError:
     print("Não e possível dividir por ZERO ")
