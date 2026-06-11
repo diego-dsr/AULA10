@@ -1,20 +1,22 @@
+def soma(a, b):
+    res = a + b
+
+    if res % 2 == 0:
+        print("Número par")
+    else:
+        print("Número ímpar")
+
+    return res
+
+
 try:
-    def soma(a,b):
-        res = a + b
-        #print(f"o resultado do primeiro calculo é: {res}")
-        if i in soma % 2 ==0:
-             print("Número Impar")
-        else:
-            return "impar"
-    
-        return res
-    
-    resultado1 = soma(int(input("Digite o primeiro numero: ")), int(input("Digite o segundo numero: ")))
-    print(F"o resultado do primeiro calculo é {soma(a,b)}")
-    
-except ZeroDivisionError:
-    print("Não e possível dividir por ZERO ")
-    
+    a = int(input("Digite o primeiro número: "))
+    b = int(input("Digite o segundo número: "))
+
+    resultado1 = soma(a, b)
+
+    print(f"O resultado do primeiro cálculo é {resultado1}")
+
 except ValueError:
     print("Apenas valores inteiros!")
 
