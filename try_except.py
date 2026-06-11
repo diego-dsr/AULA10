@@ -9,7 +9,7 @@ try:
     
         return res
     
-    resultado1 = soma(int(input("Digite o primeiro numero: ")), int(input("Digite o segundo numero: ")))
+    
     print(F"o resultado do primeiro calculo é {soma(a,b)}")
     
 except ZeroDivisionError:
