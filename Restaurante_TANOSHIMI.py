@@ -29,7 +29,7 @@ def registrar_pedidos():
             "Qual item você quer? (Digite o número ou 'sair' para terminar): "
         )
 
-        if opcao.lower() == "sair":
+        if opcao.lower().strip() == "sair":
             break
 
         try:
