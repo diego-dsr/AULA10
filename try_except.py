@@ -1,45 +1,27 @@
-try:
-    def soma(a,b):
-        res = a + b
-        #print(f"o resultado do primeiro calculo é: {res}")
-        if i in soma % 2 ==0:
-             print("Número Impar")
-        else:
-            return "impar"
-    
-        return res
-    
-    resultado1 = soma(int(input("Digite o primeiro numero: ")), int(input("Digite o segundo numero: ")))
-    print(F"o resultado do primeiro calculo é {soma(a,b)}")
-    
-except ZeroDivisionError:
-    print("Não e possível dividir por ZERO ")
-    
-except ValueError:
-    print("Apenas Valores inteiros ")
-else:
-      print(f"Soma Feita! ")
-finally:
-        print ("Fim da Operação")
+def soma(a, b):
+    res = a + b
 
-
-""" def par_ou_impar(num):
-    if num % 2 == 0:
-        return "par"
+    if res % 2 == 0:
+        print("Número par")
     else:
-        return "impar"
+        print("Número ímpar")
 
-num = int(input("Entre com o número: "))
-print(f"Numero {num} é {par_ou_impar(num)}")
- """
-""" def calcular_soma(num1, num2):
-    resultado = num1 + num2
-    return resultado
+    return res
 
-resultado1 = calcular_soma(int(input("Digite o primeiro numero: ")), int(input("Digite o segundo numero: ")))
-resultado2 = calcular_soma(int(input("Digite o primeiro numero: ")), int(input("Digite o segundo numero: ")))
-resultado3 = calcular_soma(int(input("Digite o primeiro numero: ")), int(input("Digite o segundo numero: ")))
 
-print(F"o resultado do primeiro calculo é: {resultado1}")
-print(F"o resultado do segundo calculo é: {resultado2}")
-print(F"o resultado do terceiro calculo é: {resultado3}") """
+try:
+    a = int(input("Digite o primeiro número: "))
+    b = int(input("Digite o segundo número: "))
+
+    resultado1 = soma(a, b)
+
+    print(f"O resultado do primeiro cálculo é {resultado1}")
+
+except ValueError:
+    print("Apenas valores inteiros!")
+
+else:
+    print("Soma feita!")
+
+finally:
+    print("Fim da operação")
