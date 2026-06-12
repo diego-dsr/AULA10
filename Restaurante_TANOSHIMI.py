@@ -4,7 +4,9 @@ menu = {
     3: ("Gunkan (dupla)", 20),
     4: ("Hossomaki (8 peças)", 30),
     5: ("Sashimi (Porção)", 50),
-    6: ("Temaki (Unidade)", 30)
+    6: ("Temaki (Unidade)", 30),
+    7: ("Refrigerante (Lata)", 6),
+    8: ("Saquê (Azuma/Sakeih)", 18)
 }
 
 # EXIBIR MENU
