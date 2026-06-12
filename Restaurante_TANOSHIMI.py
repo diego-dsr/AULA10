@@ -1,7 +1,7 @@
 menu = {
-    1: ("Nigiri (dupla)", 15),
+    1: ("Nigiri (Dupla)", 15),
     2: ("Uramaki (8 peças)", 40),
-    3: ("Gunkan (dupla)", 20),
+    3: ("Gunkan (Dupla)", 20),
     4: ("Hossomaki (8 peças)", 30),
     5: ("Sashimi (Porção)", 50),
     6: ("Temaki (Unidade)", 30),
@@ -11,13 +11,13 @@ menu = {
 
 # EXIBIR MENU
 def exibir_menu():
-    print("=" * 36)
-    print("CARDÁPIO DO RESTAURANTE TANOSHIMI")
-    print("=" * 36)
+    print("=" * 44)
+    print("🥢🍣 CARDÁPIO DO RESTAURANTE TANOSHIMI 🍣🥢")
+    print("=" * 44)
 
     for opcao, (item, valor) in menu.items():
         print(f"{opcao}. {item:<20} R$ {valor:>6.2f}")
-        print("_" * 36)
+        print("_" * 44)
 
 
 # REGISTRAR PEDIDOS
@@ -37,7 +37,7 @@ def registrar_pedidos():
         try:
             opcao = int(opcao)
         except ValueError:
-            print("Digite apenas números ou 'sair'.")
+            print("❗Digite apenas números❗ ou 'sair'.")
 
         if opcao in menu:
             item, valor = menu[opcao]
@@ -45,7 +45,7 @@ def registrar_pedidos():
             total += valor
             print(f"Subtotal: R$ {total:.2f}")
         else:
-                print("Item inválido!")
+                print("❌ Item inválido ❌")
 
         
 
@@ -58,7 +58,7 @@ def calcular_conta(registro, total):
     total_gorjeta = total + gorjeta
 
     print("=" * 36)
-    print(f'{" " * 14}CONTA')
+    print(f'{" " * 10}💵 💳 CONTA 💵 💳')
     print("_" * 36)
 
     for item, preco in registro:
